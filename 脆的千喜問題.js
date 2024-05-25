@@ -23,7 +23,7 @@ class InteractStatChanger {
     }
 
     startObserving() {
-        this.interactStatObserver.observe(document.body, { subtree: true, childList: true });
+        this.interactStatObserver.observe(document.body, { subtree: true, childList: true, attributes: true });
     }
 
     stopObserving() {
